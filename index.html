@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Chingpro's Portfolio</title>
+    <style>
+        .bg-image{
+            background-image: url("./images/backround\ image.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
   </head>
   <body>
     <nav class="p-5 flex items-center 
-    justify-around shadow-md">
+    justify-around shadow-md bg-transparent fixed w-full">
       <h1 class="text-3xl font-bold">CHINGPRO</h1>
-      <ul class="flex gap-10 ">
+      <ul class="flex gap-10 text-white ">
         <li><a href="">Home</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">About</a></li>
@@ -18,5 +26,19 @@
         <li><a href="">Portfolio</a></li>
       </ul>
     </nav>
+
+    <header class="bg-image flex items-end justify-around ">
+        <div class="w-1/2 pb-52 space-y-6">
+            <h3 class="text-slate-200 text- max-w-2xl">Chingpro Marma</h3>
+
+            <h1 class="text-6xl text-white font-bold">I'm a Web Designer </h1>
+
+            <p class="text-xl text-slate-300 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ipsum asperiores non expedita ipsam rem iure vero. Quaerat voluptate laudantium, omnis debitis optio amet dolores tempora consectetur, est praesentium quia?</p>
+            <button class="p-3 text-white border-white border rounded-md">Go to portfolio</button>
+        </div>
+      
+            <img class="w-full " src="./images/chingpro.png" alt="">
+       
+    </header>
   </body>
 </html>
